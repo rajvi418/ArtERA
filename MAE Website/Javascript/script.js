@@ -81,7 +81,7 @@ tabBtns.forEach(btn => {
 });
 
 // Contact form -> mailto (direct to your inbox, no phone number needed)
-const CONTACT_EMAIL = "your-email@example.com"; // EDIT: replace with your real email
+const CONTACT_EMAIL = "myarteraaa@gmail.com"; // EDIT: replace with your real email
 const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 form.addEventListener('submit', function (e) {

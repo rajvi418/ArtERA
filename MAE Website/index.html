@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  EDIT CHECKLIST before you publish:
+  1. Brand name/logo — search "ByteCanvas" and replace with your real brand name if you have one.
+  2. Contact email — search "your-email@example.com" (appears twice: contact card + CONTACT_EMAIL JS variable).
+  3. GitHub links — search "EDIT: add your GitHub repo link" comments below, one per project card in
+     the Web Dev and Android tabs. Replace href="#" with your real repo/live links.
+  4. Social links — search "EDIT: add your" near the footer socials (GitHub, Behance, Instagram, LinkedIn).
+  5. Graphics + Android project cards are placeholders — swap in your real work + thumbnails when ready.
+  ============================================================
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="Logo/ChatGPT Image Jul 13, 2026, 03_44_13 PM.png">
+  <title>MAE — Web, Graphics & App Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header>
+    <nav class="wrap">
+      <!-- EDIT: replace "ByteCanvas" with your real brand name if you have one -->
+      <a href="#top" class="brand"><span class="logo-mark">
+          <img src="Logo/MAE-S-transparent.png" alt="MAE logo"></span> / MyArtERA</a>
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <ul class="nav-links-mobile" id="navLinksMobile">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <span class="eyebrow reveal">Web &middot; Graphics &middot; Android</span>
+      <h1>
+        <span class="line"><span>Three disciplines,</span></span>
+        <span class="line"><span>one <em class="accent">studio</em>.</span></span>
+      </h1>
+      <p class="lede reveal">Websites that work, visuals that land, and Android apps that ship — all from one place.
+        Pick a department below to see the work.</p>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn-primary magnetic">See the work</a>
+        <a href="#contact" class="btn-ghost magnetic">Start a project</a>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span><span class="pop">Web Development</span><span class="dot"></span>Graphic Design<span
+            class="dot"></span><span class="pop">Android Apps</span><span class="dot"></span>UI/UX<span
+            class="dot"></span><span class="pop">Branding</span><span class="dot"></span>Figma<span
+            class="dot"></span></span>
+        <span><span class="pop">Web Development</span><span class="dot"></span>Graphic Design<span
+            class="dot"></span><span class="pop">Android Apps</span><span class="dot"></span>UI/UX<span
+            class="dot"></span><span class="pop">Branding</span><span class="dot"></span>Figma<span
+            class="dot"></span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-tag reveal">Departments</span>
+          <h2 class="reveal">Pick a lane.</h2>
+        </div>
+        <p class="reveal">Each tab is its own department — click through to see that side of the work.</p>
+      </div>
+
+      <div class="tab-bar reveal">
+        <button class="tab-btn active" data-tab="webdev">Web Dev &amp; Design</button>
+        <button class="tab-btn" data-tab="graphics">Graphics Design</button>
+        <button class="tab-btn" data-tab="android">Android Apps</button>
+      </div>
+
+      <!-- ============ TAB 1: WEB DEVELOPMENT & DESIGN ============ -->
+      <div class="tab-panel active" id="webdev">
+        <div class="work-grid">
+
+          <!-- EDIT: add your GitHub repo link (or leave the live link) for this project -->
+          <a href="https://pro-one-webtemplete.vercel.app/" target="_blank" rel="noopener" class="card tilt">
+            <div class="thumb"><img src="https://rajvifolio.vercel.app/Images/Websites/ProOne-Website.png"
+                alt="ProOne website"></div>
+            <div class="card-body">
+              <h3>ProOne <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A clean business web template built for a fast, modern first impression.</p>
+              <div class="tags"><span>HTML/CSS</span><span>Template</span></div>
+            </div>
+          </a>
+
+          <!-- EDIT: add your GitHub repo link (or leave the live link) for this project -->
+          <a href="https://thinkthechh.netlify.app/" target="_blank" rel="noopener" class="card tilt">
+            <div class="thumb"><img src="https://rajvifolio.vercel.app/Images/Websites/TechThinkAi.png"
+                alt="TechThink AI website"></div>
+            <div class="card-body">
+              <h3>TechThink AI <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A landing page concept for an AI-focused product, built for clarity and speed.</p>
+              <div class="tags"><span>JavaScript</span><span>Landing Page</span></div>
+            </div>
+          </a>
+
+          <!-- EDIT: add your GitHub repo link (or leave the live link) for this project -->
+          <a href="https://crafto-restaurant-ruby.vercel.app/" target="_blank" rel="noopener" class="card tilt">
+            <div class="thumb"><img src="https://rajvifolio.vercel.app/Images/Websites/Crafto-Restaurant.png"
+                alt="Crafto restaurant website"></div>
+            <div class="card-body">
+              <h3>Crafto Restaurant <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A restaurant site with a warm, appetite-driven layout and menu showcase.</p>
+              <div class="tags"><span>Bootstrap</span><span>Restaurant</span></div>
+            </div>
+          </a>
+
+          <!-- EDIT: add your GitHub repo link (or leave the live link) for this project -->
+          <a href="https://daxa.vercel.app/" target="_blank" rel="noopener" class="card tilt">
+            <div class="thumb"><img src="https://rajvifolio.vercel.app/Images/Websites/DaxaAdminPanel.png"
+                alt="Daxa admin panel"></div>
+            <div class="card-body">
+              <h3>Daxa Admin Panel <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A dashboard UI built for clarity at a glance — data, controls, and navigation in one system.</p>
+              <div class="tags"><span>Tailwind CSS</span><span>Dashboard</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ============ TAB 2: GRAPHICS DESIGN (placeholders — swap in real work) ============ -->
+      <div class="tab-panel" id="graphics">
+        <div class="work-grid">
+
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="3" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Brand Identity <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>Logo, color palette, and brand guidelines for a client.
+                <!-- EDIT: replace with a real project + thumbnail -->
+              </p>
+              <div class="tags"><span>Branding</span><span>Illustrator</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <path d="M4 19h16M4 15l4-6 4 4 4-8 4 10" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Social Media Kit <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A set of templated posts and stories for consistent brand posting.
+                <!-- EDIT: replace with a real project + thumbnail -->
+              </p>
+              <div class="tags"><span>Social Media</span><span>Canva</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <path d="M4 14l4-4 3 3 5-6 4 5" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Poster / Print Design <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>Print-ready poster design for an event or campaign.
+                <!-- EDIT: replace with a real project + thumbnail -->
+              </p>
+              <div class="tags"><span>Print</span><span>Photoshop</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 12h8M12 8v8" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Packaging Concept <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>Product packaging mockup and label design. <!-- EDIT: replace with a real project + thumbnail --></p>
+              <div class="tags"><span>Packaging</span><span>Mockup</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ============ TAB 3: ANDROID APP DEVELOPMENT (placeholders — swap in real work) ============ -->
+      <div class="tab-panel" id="android">
+        <div class="work-grid">
+
+          <!-- EDIT: add your GitHub repo link for this app -->
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <rect x="7" y="2" width="10" height="20" rx="2" />
+                <path d="M11 18h2" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>App One <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A short line on what the app does and who it's for.
+                <!-- EDIT: replace with a real project + thumbnail -->
+              </p>
+              <div class="tags"><span>Java</span><span>Firebase</span></div>
+            </div>
+          </a>
+
+          <!-- EDIT: add your GitHub repo link for this app -->
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <rect x="7" y="2" width="10" height="20" rx="2" />
+                <circle cx="12" cy="18" r="1" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>App Two <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A short line on what the app does and who it's for.
+                <!-- EDIT: replace with a real project + thumbnail -->
+              </p>
+              <div class="tags"><span>Dart</span><span>Android Studio</span></div>
+            </div>
+          </a>
+
+          <!-- EDIT: add your GitHub repo link for this app -->
+          <a href="#" class="card tilt">
+            <div class="thumb placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.5">
+                <rect x="7" y="2" width="10" height="20" rx="2" />
+                <path d="M9 7h6M9 10h6" />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>App Three <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg></span></h3>
+              <p>A short line on what the app does and who it's for.
+                <!-- EDIT: replace with a real project + thumbnail -->
+              </p>
+              <div class="tags"><span>XML</span><span>Java</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="blob"></div>
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <span class="section-tag reveal">Contact</span>
+        <h2 class="reveal" style="margin-bottom:20px;">Got a project in mind?</h2>
+        <p class="reveal">Fill in the form and it'll open a pre-filled email in your inbox app, addressed directly to me
+          — no phone calls needed. I usually reply within 1–2 business days.</p>
+
+        <div class="contact-channel reveal">
+          <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--violet)"
+              stroke-width="2">
+              <path d="M4 6l8 7 8-7M4 6v12h16V6" />
+            </svg></div>
+          <div>
+            <div class="label">Email</div>
+            <div class="value">myarteraaa@gmail.com<!-- EDIT: replace with your real email --></div>
+          </div>
+        </div>
+        <div class="contact-channel reveal">
+          <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--violet)"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8 12h8M12 8v8" />
+            </svg></div>
+          <div>
+            <div class="label">Availability</div>
+            <div class="value">Open for freelance work</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <form id="contactForm" class="reveal">
+          <div class="form-row">
+            <div><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+            <div><label for="email">Your email</label><input type="email" id="email" name="email" required></div>
+          </div>
+          <div>
+            <label for="projectType">Department</label>
+            <select id="projectType" name="projectType">
+              <option>Web Development &amp; Design</option>
+              <option>Graphics Design</option>
+              <option>Android App Development</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Project details</label>
+            <textarea id="message" name="message"
+              placeholder="Tell me a bit about what you need, your timeline, and budget if you have one."
+              required></textarea>
+          </div>
+          <button type="submit" class="submit-btn magnetic">Send message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a href="#top" class="brand"><span class="logo-mark"><img src="Logo/MAE-S-transparent.png" alt="MAE-LOGO"></span>/
+        MyArtERA</a>
+      <ul class="socials">
+        <!-- EDIT: add your real GitHub link -->
+        <!-- <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>    -->
+        <!-- EDIT: add your real Behance link -->
+        <li><a href="#" target="_blank" rel="noopener">Behance</a></li>
+        <!-- EDIT: add your real Instagram link -->
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <!-- EDIT: add your real LinkedIn link -->
+        <!-- <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li> -->
+      </ul>
+      <span class="footer-note">© 2026 MyArtERA</span>
+    </div>
+  </footer>
+
+</body>
+<script src="Javascript/script.js"></script>
+
+</html>

@@ -1061,3 +1061,17 @@
    outline: 2px solid var(--violet);
    outline-offset: 3px;
  }
+
+ .temp_coming {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 200px;
+   background-color: var(--paper);
+   border-radius: var(--radius);
+   border: 1px solid var(--line);
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 600;
+   font-size: 1.5rem;
+   color: var(--grey);
+ }
